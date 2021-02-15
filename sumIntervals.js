@@ -1,3 +1,5 @@
+//not solved yet
+
 /*
 Write a function called sumIntervals/sum_intervals() that 
 -Accepts an array of intervals, 
@@ -20,21 +22,12 @@ function sumIntervals(intervals) {
   let arrayB = [];
   let count = 0;
   if (intervals.length < 2) {
-    //   arrayB.push(intervals[0]);
-
-    //   console.log(arrayB, 'arrayB after final interval push');
-
-    //   arrayB.forEach(item => {
-    // console.log(item, 'arrayB item');
-    //   });
     return;
   }
 
   let arrayA = intervals[0];
-  `
+
   intervals.splice(0, 1);
-  //   console.log(arrayA, 'arrayA after');`;
-  //   console.log(intervals, 'intervals after');
 
   intervals.forEach(item => {
     let myArray = [];
@@ -45,9 +38,7 @@ function sumIntervals(intervals) {
       intervals.splice(intervals.indexOf(item), 1);
       arrayA[0] <= item[0] ? myArray.push(arrayA[0]) : myArray.push(item[0]);
       arrayA[1] >= item[0] ? myArray.push(arrayA[1]) : myArray.push(item[1]);
-      //   console.log(arrayB, 'beforePush');
       arrayB.push(myArray);
-      //   console.log(arrayB, 'afterPush');
     }
   });
   intervals.length === 1
