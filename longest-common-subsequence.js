@@ -1,3 +1,4 @@
+//not solved yet
 function LCS(aSequence, bSequence) {
   let aArray = aSequence.split('');
   let bArray = bSequence.split('');

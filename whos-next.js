@@ -1,3 +1,5 @@
+//not solved yet
+
 function whoIsNext(names, r) {
   if (r <= names.length) {
     return;
